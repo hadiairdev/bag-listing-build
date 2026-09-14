@@ -1,0 +1,35 @@
+<!doctype html><meta charset="utf-8"><title>Secondhand Bag Listing — Build</title>
+<meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="style.css">
+<header class="top"><div class="wrap"><b>Secondhand Bag Listing Page</b><span class="num">BUILD</span></div></header>
+<main class="wrap">
+  <h1>Browse bags</h1>
+  <p class="lede">Search, filtering and the wishlist are working. Everything else on the phase is represented in the scope prototype, not here.</p>
+
+  <div class="controls" id="controls">
+    <input type="search" id="q" placeholder="Search brand or model…" aria-label="Search">
+    <select id="brand" aria-label="Brand"><option value="">All brands</option></select>
+    <select id="cond" aria-label="Condition">
+      <option value="">Any condition</option>
+      <option>New</option><option>Like New</option><option>Gently Used</option><option>Worn</option>
+    </select>
+    <select id="max" aria-label="Max price">
+      <option value="">Any price</option>
+      <option value="500">Under $500</option>
+      <option value="1000">Under $1,000</option>
+      <option value="2000">Under $2,000</option>
+    </select>
+    <label style="display:flex;align-items:center;gap:7px;font-size:14px;color:var(--muted)">
+      <input type="checkbox" id="only" style="padding:0"> Saved only
+    </label>
+  </div>
+
+  <div class="chips" id="chips"></div>
+  <p class="count" id="count"></p>
+  <div class="grid" id="grid"></div>
+  <p class="empty" id="empty" hidden></p>
+
+  <footer>
+    Build review fixture for the Airdev portal. Dummy data; the wishlist is stored in this browser only.
+  </footer>
+</main>
+<script src="app.js"></script>
